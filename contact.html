@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kontak | Void Sarana Desaindo</title>
+
+<meta name="description" content="Hubungi Void Sarana Desaindo untuk konsultasi proyek renovasi rumah, desain arsitektur, atau pekerjaan landscape.">
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body class="contact-page">
+
+  <!-- HEADER -->
+  <header class="site-header" id="navbar">
+
+<div class="container header-flex">
+
+<img src="assets/img/logo.png" alt="Void Sarana Desaindo" class="logo">
+
+<div class="menu-toggle" id="menu-toggle">
+☰
+</div>
+
+<nav class="nav" id="nav-menu">
+<a href="index.html" class="active">Home</a>
+<a href="services.html">Services</a>
+<a href="portfolio.html">Portfolio</a>
+<a href="about.html">About Us</a>
+<a href="contact.html" class="btn-primary">Contact</a>
+</nav>
+
+</div>
+
+</header>
+
+  <!-- PAGE HEADER -->
+  <section class="page-header">
+    <div class="container">
+      <h1>Let’s Work Together</h1>
+      <p>
+        Jika Anda memiliki rencana renovasi, kebutuhan desain arsitektur,
+        atau pekerjaan landscape, silakan hubungi kami untuk diskusi awal
+        dan penyesuaian scope pekerjaan.
+      </p>
+    </div>
+  </section>
+
+  <!-- CONTACT CONTENT -->
+  <section class="contact">
+    <div class="container">
+
+      <div class="contact-card">
+        <h2>Get in Touch</h2>
+        <p>
+          Kami lebih responsif melalui WhatsApp untuk komunikasi awal.
+          Email tersedia untuk kebutuhan formal dan pengiriman dokumen.
+        </p>
+
+        <div class="contact-actions">
+          <!-- GANTI NOMOR WA DI BAWAH -->
+          <a
+            href="https://wa.me/6285795872985"
+            target="_blank"
+            class="btn-primary"
+          >
+            Chat via WhatsApp
+          </a>
+
+          <!-- GANTI EMAIL DI BAWAH -->
+          <a href="mailto:voidsaranadesaindo@gmail.com" class="btn-secondary">
+            Send Email
+          </a>
+        </div>
+
+        <div class="contact-social">
+          <p>Follow our work:</p>
+          <a
+            href="https://instagram.com/void.desaindo"
+            target="_blank"
+          >
+            Instagram @void.desaindo
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    © 2026 PT Void Sarana Desaindo. All rights reserved.
+  </footer>
+
+<script>
+
+const toggle = document.getElementById("menu-toggle");
+const nav = document.getElementById("nav-menu");
+
+toggle.addEventListener("click", () => {
+nav.classList.toggle("active");
+});
+
+document.querySelectorAll("#nav-menu a").forEach(link=>{
+link.addEventListener("click",()=>{
+nav.classList.remove("active");
+});
+});
+
+</script>
+
+<script>
+
+const navbar = document.getElementById("navbar");
+
+window.addEventListener("scroll", function(){
+
+if(window.scrollY > 60){
+navbar.classList.add("scrolled");
+}else{
+navbar.classList.remove("scrolled");
+}
+
+});
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Jasa Landscape Installation | Void Sarana Desaindo</title>
+
+<meta name="description" content="Void Sarana Desaindo menyediakan jasa instalasi landscape meliputi penyediaan tanaman, pekerjaan penanaman, serta maintenance taman sesuai desain dari owner atau konsultan.">
+
+<link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+
+
+<body>
+
+<header class="site-header" id="navbar">
+
+<div class="container header-flex">
+
+<img src="assets/img/logo.png" alt="Void Sarana Desaindo" class="logo">
+
+<div class="menu-toggle" id="menu-toggle">
+☰
+</div>
+
+<nav class="nav" id="nav-menu">
+<a href="index.html" class="active">Home</a>
+<a href="services.html">Services</a>
+<a href="portfolio.html">Portfolio</a>
+<a href="about.html">About Us</a>
+<a href="contact.html" class="btn-primary">Contact</a>
+</nav>
+
+</div>
+
+</header>
+
+
+
+<!-- PAGE HEADER -->
+
+<section class="page-header">
+
+<div class="container">
+
+<h1>Jasa Landscape Installation</h1>
+
+<p>
+Layanan instalasi landscape yang meliputi penyediaan tanaman,
+pekerjaan penanaman, serta maintenance taman berdasarkan
+desain dari owner atau konsultan landscape.
+</p>
+
+</div>
+
+</section>
+
+
+
+<!-- HERO IMAGE -->
+
+<section class="service-detail">
+
+<div class="container">
+
+<div class="service-slider">
+
+<img src="assets/img/portfolio/land1.jpg" class="service-slide active">
+
+<img src="assets/img/portfolio/land2.jpg" class="service-slide">
+
+<img src="assets/img/portfolio/land3.jpg" class="service-slide">
+
+<img src="assets/img/portfolio/land4.jpg" class="service-slide">
+
+<img src="assets/img/portfolio/land5.jpg" class="service-slide">
+
+<img src="assets/img/portfolio/land6.jpg" class="service-slide">
+
+<div class="slider-prev">&#10094;</div>
+<div class="slider-next">&#10095;</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- LAYANAN LANDSCAPE -->
+
+<section class="service-detail">
+
+<div class="container">
+
+<h2>Layanan Landscape yang Kami Kerjakan</h2>
+
+<ul>
+
+<li>Penyediaan berbagai jenis tanaman landscape</li>
+
+<li>Pekerjaan penanaman taman</li>
+
+<li>Pemasangan tanaman area perumahan</li>
+
+<li>Pemasangan tanaman area komersial</li>
+
+<li>Maintenance dan perawatan taman</li>
+
+</ul>
+
+</div>
+
+</section>
+
+
+
+<!-- PENDEKATAN PEKERJAAN -->
+
+<section class="service-detail">
+
+<div class="container">
+
+<h2>Pendekatan Pekerjaan Landscape</h2>
+
+<p>
+Kami melaksanakan pekerjaan landscape berdasarkan desain
+yang telah disiapkan oleh owner atau konsultan landscape.
+Pendekatan ini memastikan proses instalasi tanaman dilakukan
+secara teknis dan sesuai dengan rencana desain yang telah dibuat.
+</p>
+
+</div>
+
+</section>
+
+
+<!-- CTA -->
+
+<section class="cta-project">
+
+<div class="container">
+
+<div class="cta-box">
+
+<div class="cta-text">
+
+<h2>Diskusikan Proyek Landscape Anda</h2>
+
+<p>
+Jika Anda memiliki rencana instalasi taman atau landscape,
+kami siap membantu menyediakan tanaman serta melakukan
+pekerjaan penanaman sesuai dengan desain yang tersedia.
+</p>
+
+</div>
+
+<a href="contact.html" class="btn-primary">
+Konsultasi Proyek
+</a>
+
+</div>
+
+<br>
+
+<a href="services.html">← Kembali ke Services</a>
+
+</div>
+
+</section>
+
+
+
+<footer class="site-footer">
+
+<div class="container">
+
+© 2026 PT Void Sarana Desaindo
+
+</div>
+
+</footer>
+
+<script>
+
+const serviceSlides = document.querySelectorAll(".service-slide");
+const nextBtn = document.querySelector(".slider-next");
+const prevBtn = document.querySelector(".slider-prev");
+
+let serviceIndex = 0;
+
+function showSlide(index){
+
+serviceSlides.forEach(slide => slide.classList.remove("active"));
+
+serviceSlides[index].classList.add("active");
+
+}
+
+function nextSlide(){
+
+serviceIndex++;
+
+if(serviceIndex >= serviceSlides.length){
+serviceIndex = 0;
+}
+
+showSlide(serviceIndex);
+
+}
+
+function prevSlide(){
+
+serviceIndex--;
+
+if(serviceIndex < 0){
+serviceIndex = serviceSlides.length - 1;
+}
+
+showSlide(serviceIndex);
+
+}
+
+nextBtn.addEventListener("click", nextSlide);
+prevBtn.addEventListener("click", prevSlide);
+
+setInterval(nextSlide,4000);
+
+</script>
+
+<script>
+
+const toggle = document.getElementById("menu-toggle");
+const nav = document.getElementById("nav-menu");
+
+toggle.addEventListener("click", () => {
+nav.classList.toggle("active");
+});
+
+document.querySelectorAll("#nav-menu a").forEach(link=>{
+link.addEventListener("click",()=>{
+nav.classList.remove("active");
+});
+});
+
+</script>
+
+<script>
+
+const navbar = document.getElementById("navbar");
+
+window.addEventListener("scroll", function(){
+
+if(window.scrollY > 60){
+navbar.classList.add("scrolled");
+}else{
+navbar.classList.remove("scrolled");
+}
+
+});
+
+</script>
+
+</body>
+</html>

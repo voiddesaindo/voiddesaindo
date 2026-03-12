@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Jasa Desain Arsitektur | Void Sarana Desaindo</title>
+
+<meta name="description" content="Jasa desain arsitektur rumah dan bangunan skala kecil oleh Void Sarana Desaindo dengan pendekatan desain yang fungsional, estetis, dan mudah direalisasikan.">
+
+<link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+
+
+<body>
+
+<header class="site-header" id="navbar">
+
+<div class="container header-flex">
+
+<img src="assets/img/logo.png" alt="Void Sarana Desaindo" class="logo">
+
+<div class="menu-toggle" id="menu-toggle">
+☰
+</div>
+
+<nav class="nav" id="nav-menu">
+<a href="index.html" class="active">Home</a>
+<a href="services.html">Services</a>
+<a href="portfolio.html">Portfolio</a>
+<a href="about.html">About Us</a>
+<a href="contact.html" class="btn-primary">Contact</a>
+</nav>
+
+</div>
+
+</header>
+
+
+
+<!-- PAGE HEADER -->
+
+<section class="page-header">
+
+<div class="container">
+
+<h1>Desain Arsitektur</h1>
+
+<p>
+Layanan desain arsitektur yang berfokus pada keseimbangan
+antara fungsi ruang, estetika desain, serta kemudahan
+implementasi dalam proses konstruksi.
+</p>
+
+</div>
+
+</section>
+
+
+
+<!-- HERO IMAGE -->
+
+<section class="service-detail">
+
+<div class="container">
+
+<div class="service-slider">
+
+<img src="assets/img/portfolio/arch1.jpg" class="service-slide active">
+
+<img src="assets/img/portfolio/arch2.jpg" class="service-slide">
+
+<img src="assets/img/portfolio/arch3.jpg" class="service-slide">
+
+<img src="assets/img/portfolio/arch4.jpg" class="service-slide">
+
+<img src="assets/img/portfolio/arch5.jpg" class="service-slide">
+
+<img src="assets/img/portfolio/arch6.jpg" class="service-slide">
+
+<div class="slider-prev">&#10094;</div>
+<div class="slider-next">&#10095;</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- LAYANAN YANG DISEDIAKAN -->
+
+<section class="service-detail">
+
+<div class="container">
+
+<h2>Layanan Desain yang Kami Sediakan</h2>
+
+<ul>
+
+<li>Desain rumah tinggal</li>
+
+<li>Desain bangunan komersial skala kecil</li>
+
+<li>Konsep desain arsitektur</li>
+
+<li>Gambar kerja arsitektur</li>
+
+<li>Pengembangan desain berdasarkan kebutuhan klien</li>
+
+</ul>
+
+</div>
+
+</section>
+
+
+
+<!-- PENDEKATAN DESAIN -->
+
+<section class="service-detail">
+
+<div class="container">
+
+<h2>Pendekatan Desain</h2>
+
+<p>
+Setiap desain dikembangkan berdasarkan analisis kebutuhan
+ruang, kondisi lahan, serta preferensi visual klien.
+Pendekatan ini memastikan desain yang dihasilkan tidak
+hanya menarik secara visual, tetapi juga realistis
+untuk direalisasikan dalam proses konstruksi.
+</p>
+
+</div>
+
+</section>
+
+
+<!-- CTA -->
+
+<section class="cta-project">
+
+<div class="container">
+
+<div class="cta-box">
+
+<div class="cta-text">
+
+<h2>Diskusikan Proyek Desain Anda</h2>
+
+<p>
+Kami siap membantu merancang bangunan yang sesuai
+dengan kebutuhan fungsi ruang, karakter desain,
+dan kondisi proyek Anda.
+</p>
+
+</div>
+
+<a href="contact.html" class="btn-primary">
+Konsultasi Proyek
+</a>
+
+</div>
+
+<br>
+
+<a href="services.html">← Kembali ke Services</a>
+
+</div>
+
+</section>
+
+
+
+<footer class="site-footer">
+
+<div class="container">
+
+© 2026 PT Void Sarana Desaindo
+
+</div>
+
+</footer>
+
+<script>
+
+const serviceSlides = document.querySelectorAll(".service-slide");
+const nextBtn = document.querySelector(".slider-next");
+const prevBtn = document.querySelector(".slider-prev");
+
+let serviceIndex = 0;
+
+function showSlide(index){
+
+serviceSlides.forEach(slide => slide.classList.remove("active"));
+
+serviceSlides[index].classList.add("active");
+
+}
+
+function nextSlide(){
+
+serviceIndex++;
+
+if(serviceIndex >= serviceSlides.length){
+serviceIndex = 0;
+}
+
+showSlide(serviceIndex);
+
+}
+
+function prevSlide(){
+
+serviceIndex--;
+
+if(serviceIndex < 0){
+serviceIndex = serviceSlides.length - 1;
+}
+
+showSlide(serviceIndex);
+
+}
+
+nextBtn.addEventListener("click", nextSlide);
+prevBtn.addEventListener("click", prevSlide);
+
+setInterval(nextSlide,4000);
+
+</script>
+
+<script>
+
+const toggle = document.getElementById("menu-toggle");
+const nav = document.getElementById("nav-menu");
+
+toggle.addEventListener("click", () => {
+nav.classList.toggle("active");
+});
+
+document.querySelectorAll("#nav-menu a").forEach(link=>{
+link.addEventListener("click",()=>{
+nav.classList.remove("active");
+});
+});
+
+</script>
+
+<script>
+
+const navbar = document.getElementById("navbar");
+
+window.addEventListener("scroll", function(){
+
+if(window.scrollY > 60){
+navbar.classList.add("scrolled");
+}else{
+navbar.classList.remove("scrolled");
+}
+
+});
+
+</script>
+
+</body>
+</html>

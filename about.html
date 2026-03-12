@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tentang Kami | Void Sarana Desaindo</title>
+
+<meta name="description" content="Profil Void Sarana Desaindo, perusahaan yang bergerak di bidang renovasi bangunan, desain arsitektur, dan instalasi landscape.">
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body class="about-page">
+
+  <!-- HEADER -->
+  <header class="site-header" id="navbar">
+
+<div class="container header-flex">
+
+<img src="assets/img/logo.png" alt="Void Sarana Desaindo" class="logo">
+
+<div class="menu-toggle" id="menu-toggle">
+☰
+</div>
+
+<nav class="nav" id="nav-menu">
+<a href="index.html" class="active">Home</a>
+<a href="services.html">Services</a>
+<a href="portfolio.html">Portfolio</a>
+<a href="about.html">About Us</a>
+<a href="contact.html" class="btn-primary">Contact</a>
+</nav>
+
+</div>
+
+</header>
+
+  <!-- PAGE HEADER -->
+  <section class="page-header">
+    <div class="container">
+      <h1>About Void Sarana Desaindo</h1>
+      <p>
+        Perusahaan yang bergerak di bidang konstruksi, desain arsitektur,
+        dan pekerjaan landscape dengan pendekatan teknis yang realistis
+        dan bertanggung jawab.
+      </p>
+    </div>
+  </section>
+
+  <!-- ABOUT CONTENT -->
+  <section class="services">
+    <div class="container">
+
+      <h2 class="section-title">Who We Are</h2>
+      <p class="section-subtitle">
+        PT Void Sarana Desaindo adalah perusahaan berbadan hukum
+        yang berfokus pada pekerjaan renovasi bangunan,
+        desain arsitektur, serta instalasi dan perawatan landscape.
+      </p>
+
+      <p>
+        Kami tidak memposisikan diri sebagai perusahaan yang menjanjikan
+        hal berlebihan. Setiap proyek kami jalankan berdasarkan kapasitas,
+        kejelasan ruang lingkup pekerjaan, dan komunikasi yang terbuka
+        dengan klien.
+      </p>
+
+      <br />
+
+      <h2 class="section-title">How We Work</h2>
+      <p class="section-subtitle">
+        Pendekatan kerja kami berangkat dari pemahaman kondisi lapangan
+        dan kebutuhan aktual klien.
+      </p>
+
+      <p>
+        Dalam setiap pekerjaan, kami mengutamakan perencanaan yang matang,
+        metode pelaksanaan yang efisien, serta pengawasan yang bertanggung jawab
+        untuk memastikan hasil akhir sesuai dengan tujuan proyek.
+      </p>
+
+      <br />
+
+<div class="about-quote">
+  We believe that good construction is not about speed,
+  but about clarity, responsibility, and long-term value.
+</div>
+
+      <h2 class="section-title">Our Scope</h2>
+      <p class="section-subtitle">
+        Fokus layanan kami meliputi:
+      </p>
+
+      <ul>
+        <li>Renovasi rumah tinggal dan bangunan usaha skala kecil</li>
+        <li>Desain arsitektur bangunan hunian dan komersial</li>
+        <li>Instalasi landscape berdasarkan desain dari owner atau konsultan</li>
+        <li>Perawatan dan maintenance landscape</li>
+      </ul>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    © 2026 PT Void Sarana Desaindo. All rights reserved.
+  </footer>
+
+<script>
+
+const toggle = document.getElementById("menu-toggle");
+const nav = document.getElementById("nav-menu");
+
+toggle.addEventListener("click", () => {
+nav.classList.toggle("active");
+});
+
+document.querySelectorAll("#nav-menu a").forEach(link=>{
+link.addEventListener("click",()=>{
+nav.classList.remove("active");
+});
+});
+
+</script>
+
+<script>
+
+const navbar = document.getElementById("navbar");
+
+window.addEventListener("scroll", function(){
+
+if(window.scrollY > 60){
+navbar.classList.add("scrolled");
+}else{
+navbar.classList.remove("scrolled");
+}
+
+});
+
+</script>
+
+</body>
+</html>

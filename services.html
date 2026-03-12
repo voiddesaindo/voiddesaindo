@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Services | Void Sarana Desaindo</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body class="services-page">
+
+  <!-- HEADER -->
+  <header class="site-header" id="navbar">
+
+<div class="container header-flex">
+
+<img src="assets/img/logo.png" alt="Void Sarana Desaindo" class="logo">
+
+<div class="menu-toggle" id="menu-toggle">
+☰
+</div>
+
+<nav class="nav" id="nav-menu">
+<a href="index.html" class="active">Home</a>
+<a href="services.html">Services</a>
+<a href="portfolio.html">Portfolio</a>
+<a href="about.html">About Us</a>
+<a href="contact.html" class="btn-primary">Contact</a>
+</nav>
+
+</div>
+
+</header>
+
+  <!-- PAGE HEADER -->
+  <section class="page-header">
+    <div class="container">
+      <h1>Our Services</h1>
+      <p>
+        Kami menyediakan layanan konstruksi, desain arsitektur,
+        dan pekerjaan landscape dengan pendekatan teknis yang terukur
+        dan realistis sesuai kebutuhan proyek.
+      </p>
+    </div>
+  </section>
+
+  <!-- SERVICES DETAIL -->
+  <section class="services">
+    <div class="container">
+
+      <div class="service-item">
+        <h3>Renovation & Improvement</h3>
+        <p>
+          Pekerjaan renovasi dan peningkatan bangunan existing dengan
+          mempertimbangkan kondisi lapangan, fungsi ruang,
+          serta metode pelaksanaan yang efisien.
+        </p>
+        <ul>
+          <li>Renovasi rumah tinggal</li>
+          <li>Renovasi ruko dan bangunan usaha</li>
+          <li>Perbaikan struktur ringan</li>
+          <li>Penyesuaian tata ruang dan fungsi</li>
+        </ul>
+<a href="renovasi-rumah.html" class="btn-secondary">
+Learn More
+</a>
+      </div>
+
+      <div class="service-item">
+        <h3>Architecture Design</h3>
+        <p>
+          Layanan desain arsitektur yang mengutamakan keseimbangan
+          antara fungsi, estetika, dan kemudahan realisasi di lapangan.
+        </p>
+        <ul>
+          <li>Desain rumah tinggal</li>
+          <li>Desain bangunan komersial skala kecil</li>
+          <li>Konsep desain dan gambar kerja</li>
+          <li>Penyesuaian desain sesuai kebutuhan klien</li>
+        </ul>
+<a href="desain-arsitektur.html" class="btn-secondary">
+Learn More
+</a>
+      </div>
+
+      <div class="service-item">
+        <h3>Landscape Installation & Maintenance</h3>
+        <p>
+          Pekerjaan landscape mulai dari penyediaan tanaman,
+          penanaman, hingga perawatan berkala berdasarkan
+          desain dari owner atau konsultan.
+        </p>
+        <ul>
+          <li>Penyediaan tanaman</li>
+          <li>Pekerjaan penanaman</li>
+          <li>Maintenance dan perawatan berkala</li>
+        </ul>
+<a href="jasa-landscape.html" class="btn-secondary">
+Learn More
+</a>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    © 2026 PT Void Sarana Desaindo. All rights reserved.
+  </footer>
+
+<script>
+
+const toggle = document.getElementById("menu-toggle");
+const nav = document.getElementById("nav-menu");
+
+toggle.addEventListener("click", () => {
+nav.classList.toggle("active");
+});
+
+document.querySelectorAll("#nav-menu a").forEach(link=>{
+link.addEventListener("click",()=>{
+nav.classList.remove("active");
+});
+});
+
+</script>
+
+<script>
+
+const navbar = document.getElementById("navbar");
+
+window.addEventListener("scroll", function(){
+
+if(window.scrollY > 60){
+navbar.classList.add("scrolled");
+}else{
+navbar.classList.remove("scrolled");
+}
+
+});
+
+</script>
+
+</body>
+</html>
