@@ -2197,3 +2197,30 @@ backdrop-filter: blur(12px);
 box-shadow: 0 8px 25px rgba(0,0,0,0.08);
 }
 
+/* =========================
+   HOMEPAGE SPACING POLISH
+========================= */
+
+.services{
+  padding:65px 0;
+}
+
+.services + section{
+  padding:65px 0;
+}
+
+.home-portfolio{
+  padding:65px 0;
+}
+
+.home-portfolio + section{
+  padding:65px 0;
+}
+
+.trusted{
+  padding:65px 0;
+}
+
+.cta-project{
+  padding:65px 0;
+}
