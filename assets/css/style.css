@@ -2240,3 +2240,14 @@ box-shadow: 0 8px 25px rgba(0,0,0,0.08);
   margin-bottom:12px;
   font-size:18px;
 }
+
+/* SERVICES BUTTON CONTRAST FIX */
+.services-page .btn-secondary{
+  color:#0077B6;
+  border-color:#0077B6;
+}
+
+.services-page .btn-secondary:hover{
+  background:#0077B6;
+  color:white;
+}
