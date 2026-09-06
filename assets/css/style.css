@@ -2299,3 +2299,13 @@ box-shadow: 0 8px 25px rgba(0,0,0,0.08);
 .architecture-cta-btn:hover{
   background:#005F8F;
 }
+
+/* LANDSCAPE CTA CONTRAST FIX */
+.landscape-cta-btn{
+  background:#0077B6;
+  color:#fff;
+}
+
+.landscape-cta-btn:hover{
+  background:#005F8F;
+}
