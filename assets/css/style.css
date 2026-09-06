@@ -2289,3 +2289,13 @@ box-shadow: 0 8px 25px rgba(0,0,0,0.08);
 .renovation-cta-btn:hover{
   background:#005F8F;
 }
+
+/* ARCHITECTURE CTA CONTRAST FIX */
+.architecture-cta-btn{
+  background:#0077B6;
+  color:#fff;
+}
+
+.architecture-cta-btn:hover{
+  background:#005F8F;
+}
