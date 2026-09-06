@@ -2279,3 +2279,13 @@ box-shadow: 0 8px 25px rgba(0,0,0,0.08);
   font-family:inherit;
   line-height:1;
 }
+
+/* RENOVATION CTA CONTRAST FIX */
+.renovation-cta-btn{
+  background:#0077B6;
+  color:#fff;
+}
+
+.renovation-cta-btn:hover{
+  background:#005F8F;
+}
