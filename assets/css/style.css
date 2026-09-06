@@ -2272,3 +2272,10 @@ box-shadow: 0 8px 25px rgba(0,0,0,0.08);
   background:#0077B6;
   color:#fff;
 }
+
+.slider-prev,
+.slider-next{
+  border:0;
+  font-family:inherit;
+  line-height:1;
+}
