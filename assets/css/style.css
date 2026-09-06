@@ -2251,3 +2251,24 @@ box-shadow: 0 8px 25px rgba(0,0,0,0.08);
   background:#0077B6;
   color:white;
 }
+
+/* CONTACT PAGE BUTTON CONTRAST FIX */
+
+.contact-page .contact-card .btn-primary{
+  background:#0077B6;
+  color:#fff;
+}
+
+.contact-page .contact-card .btn-primary:hover{
+  background:#005F8F;
+}
+
+.contact-page .contact-card .btn-secondary{
+  color:#0077B6;
+  border-color:#0077B6;
+}
+
+.contact-page .contact-card .btn-secondary:hover{
+  background:#0077B6;
+  color:#fff;
+}
