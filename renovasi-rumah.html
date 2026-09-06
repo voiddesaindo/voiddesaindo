@@ -23,13 +23,19 @@
 
 <img src="assets/img/logo.png" alt="Void Sarana Desaindo" class="logo">
 
-<div class="menu-toggle" id="menu-toggle">
-☰
-</div>
+<button
+  class="menu-toggle"
+  id="menu-toggle"
+  type="button"
+  aria-label="Open navigation menu"
+  aria-controls="nav-menu"
+  aria-expanded="false">
+  ☰
+</button>
 
 <nav class="nav" id="nav-menu">
-<a href="index.html" class="active">Home</a>
-<a href="services.html">Services</a>
+<a href="index.html">Home</a>
+<a href="services.html" class="active">Services</a>
 <a href="portfolio.html">Portfolio</a>
 <a href="about.html">About Us</a>
 <a href="contact.html" class="btn-primary">Contact</a>
@@ -39,7 +45,7 @@
 
 </header>
 
-
+<main>
 
 <!-- PAGE HEADER -->
 
@@ -70,14 +76,35 @@ yang realistis.
 
 <div class="service-slider">
 
-<img src="assets/img/portfolio/reno1.jpg" class="service-slide active">
-<img src="assets/img/portfolio/reno2.jpg" class="service-slide">
-<img src="assets/img/portfolio/reno3.jpg" class="service-slide">
-<img src="assets/img/portfolio/reno4.jpg" class="service-slide">
-<img src="assets/img/portfolio/reno5.jpg" class="service-slide">
+<img src="assets/img/portfolio/reno1.jpg"
+     class="service-slide active"
+     alt="Proyek renovasi rumah Void Sarana Desaindo">
+<img src="assets/img/portfolio/reno2.jpg"
+     class="service-slide"
+     alt="Pekerjaan aluminium pada proyek renovasi rumah">
+<img src="assets/img/portfolio/reno3.jpg"
+     class="service-slide"
+     alt="Pekerjaan kitchen set pada proyek renovasi rumah">
+<img src="assets/img/portfolio/reno4.jpg"
+     class="service-slide"
+     alt="Pekerjaan interior kitchen set rumah">
+<img src="assets/img/portfolio/reno5.jpg"
+     class="service-slide"
+     alt="Proyek renovasi rumah di Bogor">
 
-<div class="slider-prev">&#10094;</div>
-<div class="slider-next">&#10095;</div>
+<button
+  class="slider-prev"
+  type="button"
+  aria-label="Previous project image">
+  &#10094;
+</button>
+
+<button
+  class="slider-next"
+  type="button"
+  aria-label="Next project image">
+  &#10095;
+</button>
 
 </div>
 </div>
@@ -182,7 +209,7 @@ Konsultasi Proyek
 
 </section>
 
-
+</main>
 
 <footer class="site-footer">
 
@@ -247,7 +274,14 @@ const toggle = document.getElementById("menu-toggle");
 const nav = document.getElementById("nav-menu");
 
 toggle.addEventListener("click", () => {
-nav.classList.toggle("active");
+  nav.classList.toggle("active");
+
+  const isOpen = nav.classList.contains("active");
+  toggle.setAttribute("aria-expanded", isOpen);
+  toggle.setAttribute(
+    "aria-label",
+    isOpen ? "Close navigation menu" : "Open navigation menu"
+  );
 });
 
 document.querySelectorAll("#nav-menu a").forEach(link=>{
