@@ -23,13 +23,19 @@
 
 <img src="assets/img/logo.png" alt="Void Sarana Desaindo" class="logo">
 
-<div class="menu-toggle" id="menu-toggle">
-☰
-</div>
+<button
+  class="menu-toggle"
+  id="menu-toggle"
+  type="button"
+  aria-label="Open navigation menu"
+  aria-controls="nav-menu"
+  aria-expanded="false">
+  ☰
+</button>
 
 <nav class="nav" id="nav-menu">
-<a href="index.html" class="active">Home</a>
-<a href="services.html">Services</a>
+<a href="index.html">Home</a>
+<a href="services.html" class="active">Services</a>
 <a href="portfolio.html">Portfolio</a>
 <a href="about.html">About Us</a>
 <a href="contact.html" class="btn-primary">Contact</a>
@@ -39,7 +45,7 @@
 
 </header>
 
-
+<main>
 
 <!-- PAGE HEADER -->
 
@@ -69,20 +75,43 @@ berdasarkan desain dari owner atau konsultan landscape.
 
 <div class="service-slider">
 
-<img src="assets/img/portfolio/land1.jpg" class="service-slide active">
+<img src="assets/img/portfolio/land1.jpg"
+     class="service-slide active"
+     alt="Instalasi landscape cluster perumahan di Tangerang">
 
-<img src="assets/img/portfolio/land2.jpg" class="service-slide">
+<img src="assets/img/portfolio/land2.jpg"
+     class="service-slide"
+     alt="Pekerjaan landscape cluster The Wynwood Tangerang">
 
-<img src="assets/img/portfolio/land3.jpg" class="service-slide">
+<img src="assets/img/portfolio/land3.jpg"
+     class="service-slide"
+     alt="Pekerjaan landscape rumah tinggal di Bogor">
 
-<img src="assets/img/portfolio/land4.jpg" class="service-slide">
+<img src="assets/img/portfolio/land4.jpg"
+     class="service-slide"
+     alt="Pekerjaan landscape rumah tinggal di Depok">
 
-<img src="assets/img/portfolio/land5.jpg" class="service-slide">
+<img src="assets/img/portfolio/land5.jpg"
+     class="service-slide"
+     alt="Instalasi landscape rumah tinggal di Bogor">
 
-<img src="assets/img/portfolio/land6.jpg" class="service-slide">
+<img src="assets/img/portfolio/land6.jpg"
+     class="service-slide"
+     alt="Pekerjaan landscape rumah di Bogor">
 
-<div class="slider-prev">&#10094;</div>
-<div class="slider-next">&#10095;</div>
+<button
+  class="slider-prev"
+  type="button"
+  aria-label="Previous project image">
+  &#10094;
+</button>
+
+<button
+  class="slider-next"
+  type="button"
+  aria-label="Next project image">
+  &#10095;
+</button>
 
 </div>
 
@@ -166,7 +195,7 @@ pekerjaan penanaman sesuai dengan desain yang tersedia.
 
 </div>
 
-<a href="contact.html" class="btn-primary">
+<a href="contact.html" class="btn-primary landscape-cta-btn">
 Konsultasi Proyek
 </a>
 
@@ -180,7 +209,7 @@ Konsultasi Proyek
 
 </section>
 
-
+</main>
 
 <footer class="site-footer">
 
@@ -245,7 +274,14 @@ const toggle = document.getElementById("menu-toggle");
 const nav = document.getElementById("nav-menu");
 
 toggle.addEventListener("click", () => {
-nav.classList.toggle("active");
+  nav.classList.toggle("active");
+
+  const isOpen = nav.classList.contains("active");
+  toggle.setAttribute("aria-expanded", isOpen);
+  toggle.setAttribute(
+    "aria-label",
+    isOpen ? "Close navigation menu" : "Open navigation menu"
+  );
 });
 
 document.querySelectorAll("#nav-menu a").forEach(link=>{
