@@ -2251,13 +2251,3 @@ box-shadow: 0 8px 25px rgba(0,0,0,0.08);
   background:#0077B6;
   color:white;
 }
-
-/* NAV CONTACT BUTTON CONTRAST FIX */
-.nav .btn-primary{
-  background:#0077B6;
-  color:#fff;
-}
-
-.nav .btn-primary:hover{
-  background:#005F8F;
-}
